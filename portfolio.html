@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -30,70 +31,97 @@
         </div>
     </header>
     <main>
-        <h1>Наши проекты</h1>
-        <div class="container">
-            <nav>
+        <section class="section">
+            <h1>Наши проекты</h1>
+            <div class="container">
+                <nav>
+                    <ul class="button-list">
+                        <li>
+                            <button type="button" class="button">Все</button>
+                        </li>
+                        <li>
+                            <button type="button" class="button">Веб-сайты</button>
+                        </li>
+                        <li>
+                            <button type="button" class="button">Приложения</button>
+                        </li>
+                        <li>
+                            <button type="button" class="button">Дизайн</button>
+                        </li>
+                        <li>
+                            <button type="button" class="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                </nav>
                 <ul>
-                    <li>
-                        <button type="button" class="button">Все</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Веб-сайты</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Приложения</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Дизайн</button>
-                    </li>
-                    <li>
-                        <button type="button" class="button">Маркетинг</button>
-                    </li>
+                    <div class="cards-container">
+                        <li>
+                            <img src="./images/portfolio-img.jpg" alt="вид сайта на ноуте" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Технокряк</h2>
+                                <p class="cards-type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img1.jpg" alt="баскетбол" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Постер New Orlean vs Golden Star</h2>
+                                <p class="cards-type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img2.jpg" alt="логотип" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Ресторан</h2> <h2 lang="en" class="cards">Seafood</h2>
+                                <p class="cards-type">Приложение</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img3.jpg" alt="наушники" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">Prime</h2>
+                                <p class="cards-type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img4.jpg" alt="коробки" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">Boxes</h2>
+                                <p class="cards-type">Приложение</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img5.jpg" alt="монитор" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 lang="en" class="cards">Inspiration has no Borders</h2>
+                                <p class="cards-type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img6.jpg" alt="книга" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Издание</h2> <h2 lang="en" class="cards">Limited Edition</h2>
+                                <p class="cards-type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img7.jpg" alt="буквы" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">LAB</h2>
+                                <p class="cards-type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/portfolio-img8.jpg" alt="работа за ноутом" width="370" height="294">
+                            <div class="cards-text">
+                                <h2 lang="en" class="cards">Growing Business</h2>
+                                <p class="cards-type">Приложение</p>
+                            </div>
+                        </li>
+                     </div>
                 </ul>
-            </nav>
-            <ul>
-                <li>
-                    <img src="./images/portfolio-img1.jpg" alt="баскетбол" width="370" height="294">
-                    <h2 class="cards">Постер New Orlean vs Golden Star</h2>
-                    <p class="cards-type">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img2.jpg" alt="логотип" width="370" height="294">
-                    <h2 class="cards">Ресторан</h2> <h2 lang="en" class="cards">Seafood</h2>
-                    <p class="cards-type">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img3.jpg" alt="наушники" width="370" height="294">
-                    <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">Prime</h2>
-                    <p class="cards-type">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img4.jpg" alt="коробки" width="370" height="294">
-                    <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">Boxes</h2>
-                    <p class="cards-type">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img5.jpg" alt="монитор" width="370" height="294">
-                    <h2 lang="en" class="cards">Inspiration has no Borders</h2>
-                    <p class="cards-type">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img6.jpg" alt="книга" width="370" height="294">
-                    <h2 class="cards">Издание</h2> <h2 lang="en" class="cards">Limited Edition</h2>
-                    <p class="cards-type">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img7.jpg" alt="буквы" width="370" height="294">
-                    <h2 class="cards">Проект</h2> <h2 lang="en" class="cards">LAB</h2>
-                    <p class="cards-type">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio-img8.jpg" alt="работа за ноутом" width="370" height="294">
-                    <h2 lang="en" class="cards">Growing Business</h2>
-                    <p class="cards-type">Приложение</p>
-               </li>
-            </ul>
-        </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">

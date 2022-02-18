@@ -180,10 +180,14 @@ h1 {
     background-color: var(--nav-button-color);
     padding: 6px 22px;
 }
+
 .button:hover,
 .button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+}
+.button-list {
+    display: flex;
 }
 .primary {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -211,4 +215,15 @@ h1 {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--secondary-color)
+}
+.cards-text {
+    border: 1px;
+    border-top: none;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
