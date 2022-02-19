@@ -93,6 +93,7 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-bottom: 40px;
 }
 .list-of-benefits {
     font-weight: 700;
@@ -100,7 +101,7 @@ h1 {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    margin-bottom: 10px;
 }
 .list-of-benefits-description {
     font-family: Roboto;
@@ -122,6 +123,13 @@ h1 {
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.team-list {
+display: flex;
+}
+.images {
+display: flex
 }
 .employee-names {
     font-weight: 500;
@@ -160,6 +168,8 @@ h1 {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .contacts-footer {
     font-weight: 400;
@@ -188,6 +198,7 @@ h1 {
 }
 .button-list {
     display: flex;
+    margin-bottom: 50px;
 }
 .primary {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -208,6 +219,8 @@ h1 {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .cards-type {
     font-weight: 400;
@@ -219,6 +232,9 @@ h1 {
 .cards-text {
     border: 1px;
     border-top: none;
+}
+.cards-text-header {
+    display: flex;
 }
 .cards-container {
     display: flex;
