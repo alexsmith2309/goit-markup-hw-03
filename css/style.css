@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
     padding: 0 15px;
 }
 .site-nav,
@@ -95,6 +94,11 @@ h1 {
     color: var(--white-color);
     margin-bottom: 40px;
 }
+.h1 {
+    width: 696px;
+    display: flex;
+    justify-content: center;
+}
 .list-of-benefits {
     font-weight: 700;
     font-size: 14px;
@@ -113,6 +117,19 @@ h1 {
 }
 .hero {
     background-color: var(--background-secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+.about-us-list {
+    display: flex;
+    justify-content: space-between;
+}
+.about-us {
+    width: 270px;
 }
 .team {
     background-color: var(--white-color)
@@ -126,10 +143,16 @@ h1 {
     margin-bottom: 50px;
 }
 .team-list {
-display: flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 .images {
-display: flex
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.employess-card:not(:last-child) {
+    margin-right: 30px;
 }
 .employee-names {
     font-weight: 500;
@@ -149,6 +172,12 @@ display: flex
 }
 .footer {
     background-color: var(--background-secondary-color);
+}
+.container.footer-container {
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .logo-footer {
     font-family: var(--secondary-font-family);
@@ -178,6 +207,9 @@ display: flex
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-list:not(:last-child) {
+    margin-bottom: 10px;
+}
 /* button */
 .button {
     font-family: var(--primary-font-family);
@@ -189,6 +221,7 @@ display: flex
     color: var(--primary-color);
     background-color: var(--nav-button-color);
     padding: 6px 22px;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -196,9 +229,13 @@ display: flex
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+.button-item:not(:last-child) {
+    margin-right: 30px;
+}
 .button-list {
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
 }
 .primary {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -212,6 +249,10 @@ display: flex
 .primary:hover,
 .primary:focus {
     background-color: #188CE8;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: center;
 }
 .cards {
     font-weight: 700;
@@ -238,8 +279,8 @@ display: flex
 }
 .cards-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
 }
