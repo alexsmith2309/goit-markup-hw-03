@@ -17,6 +17,11 @@ body  {
     color: var(--primary-color);
     background-color: var(--white-color);
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .section {
     padding: 94px 0;
 }
@@ -175,8 +180,8 @@ padding-bottom: 0;
     margin-bottom: 10px;
 }
 .employess-text {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .position-of-employees {
     font-weight: 400;
@@ -188,9 +193,9 @@ padding-bottom: 0;
 }
 .footer {
     background-color: var(--background-secondary-color);
+    padding: 60px 0;
 }
 .container.footer-container {
-    padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,6 +207,8 @@ padding-bottom: 0;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-bottom: 20px;
+    font-style: normal;
 }
 .logo-studio-footer {
     color: var(--white-color);
@@ -213,7 +220,6 @@ padding-bottom: 0;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color);
-    margin-top: 20px;
     margin-bottom: 9px;
 }
 .contacts-footer {
@@ -222,6 +228,7 @@ padding-bottom: 0;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
 }
 .footer-list:not(:last-child) {
     margin-bottom: 9px;
@@ -276,8 +283,7 @@ padding-bottom: 0;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color);
-    margin-top: 20px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
 }
 .cards-type {
     font-weight: 400;
@@ -287,14 +293,18 @@ padding-bottom: 0;
     color: var(--secondary-color)
 }
 .cards-text {
-    border: 1px;
-    border-top: none;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 .cards-block {
     margin-top: 30px;
+    margin-left: 30px;
 }
+.cards-block:nth-child(3n+1) {
+    margin-left: 0;
+}
+
 .cards-container {
     display: flex;
     flex-direction: row;
