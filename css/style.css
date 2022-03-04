@@ -54,12 +54,13 @@ line-height: calc(31 / 26);
 letter-spacing: 0.03em;
 color: var(--accent-color);
 margin-right: 93px;
+padding: 24px 0;
 }
 .logo span {
     color: var(--primary-color);
 }
-.nav-links-item + .nav-links-item {
-    margin-left: 50px;
+.nav-links-item:not(:last-child) {
+    margin-right: 50px;
 }
 .contacts-item:not(:last-child) {
     margin-right: 50px;
@@ -105,6 +106,7 @@ h1 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    width: 270px;
 }
 .list-of-benefits-description {
     font-family: Roboto;
@@ -113,6 +115,7 @@ h1 {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    width: 270px;
 }
 .hero {
     background-color: var(--background-secondary-color);
@@ -124,13 +127,12 @@ h1 {
 }
 .about-us-list {
     display: flex;
-    justify-content: space-between;
 }
 .about-us-list-indent {
 padding-bottom: 0;
 }
-.about-us {
-    width: 270px;
+.about-us:not(:last-child) {
+    margin-right: 30px;
 }
 .team {
     background-color: #F5F4FA;
@@ -147,10 +149,14 @@ padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
 }
+.section-images {
+    padding-top: 0;
+}
 .images {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+.images-indent:not(:last-child) {
+    margin-right: 30px;
 }
 .employess-card:not(:last-child) {
     margin-right: 30px;
