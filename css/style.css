@@ -304,6 +304,9 @@ padding-bottom: 0;
 .cards-block:nth-child(3n+1) {
     margin-left: 0;
 }
+.cards-block:nth-child(-n+3) {
+    margin-top: 0;
+}
 
 .cards-container {
     display: flex;
